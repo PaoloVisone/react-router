@@ -1,6 +1,7 @@
 // Integro il sistema di routing
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+
 // Pages
 import HomePage from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
@@ -23,7 +24,7 @@ function App() {
           {/* Definiamo le rotte figlie */}
           <Route path="/" element={<HomePage />} />
           <Route path="/AboutUs" element={<AboutUs />} />
-          <Route path="/ListProduct" element={<ListProduct />} />
+          <Route path="/posts" element={<ListProduct />} />
 
         </Route>
       </Routes>

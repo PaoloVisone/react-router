@@ -1,5 +1,10 @@
+// Importo il form
+import Input from '../components/Input'
+
 export default function ListProduct() {
     return (
-        <h1>Questa è la lista dei prodotti</h1>
+        <>
+            <Input />
+        </>
     )
 }

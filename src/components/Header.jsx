@@ -6,7 +6,7 @@ export default function Header(props) {
     const links = [
         { id: 1, text: 'Home', url: '/', current: true },
         { id: 2, text: 'About', url: '/AboutUs', current: false },
-        { id: 3, text: 'ListProduct', url: '/ListProduct', current: false },
+        { id: 3, text: 'ListProduct', url: '/posts', current: false },
     ];
 
 
