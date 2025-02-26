@@ -16,10 +16,15 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+
+        {/* Definiamo una rotta genitore, */}
         <Route element={<DefaultLayout />}>
+
+          {/* Definiamo le rotte figlie */}
           <Route path="/" element={<HomePage />} />
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/ListProduct" element={<ListProduct />} />
+
         </Route>
       </Routes>
 
