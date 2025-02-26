@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 // Importo axios
 import axios from "axios"
@@ -150,6 +151,8 @@ const Input = () => {
                                     <img src={article.image} alt={article.title} />
                                     <p>{article.content}</p>
                                     <span>{article.tags.join(", ")}</span>
+                                    <Link to={`/posts/${article.id}`}>Dettagli</Link>
+
 
                                     {/* Delete button */}
                                     <div className="content-btn">

@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import ListProduct from "./pages/ListProduct";
+import SingleProduct from "./pages/SingleProduct";
 
 // Layout
 import DefaultLayout from "./layouts/DefaultLayout";
@@ -22,10 +23,12 @@ function App() {
         <Route element={<DefaultLayout />}>
 
           {/* Definiamo le rotte figlie */}
-          <Route path="/" element={<HomePage />} />
+          <Route index element={<HomePage />} />
           <Route path="/AboutUs" element={<AboutUs />} />
-          <Route path="/posts" element={<ListProduct />} />
-
+          <Route path="/posts">
+            <Route index element={<ListProduct />} />
+            <Route path=":id" element={<SingleProduct />} />
+          </Route>
         </Route>
       </Routes>
 
