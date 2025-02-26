@@ -149,9 +149,9 @@ const Input = () => {
 
                                     <h3>{article.title}</h3>
                                     <img src={article.image} alt={article.title} />
+                                    <Link to={`/posts/${article.id}`}>Dettagli</Link>
                                     <p>{article.content}</p>
                                     <span>{article.tags.join(", ")}</span>
-                                    <Link to={`/posts/${article.id}`}>Dettagli</Link>
 
 
                                     {/* Delete button */}
