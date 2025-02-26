@@ -19,6 +19,28 @@ a {
   text-decoration: inherit;
 }
 
+.article-list a {
+  color: goldenrod;
+  display: block;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+/* nav Arrow */
+nav {
+  padding: 20px;
+}
+
+/* Arrow */
+nav .arrow {
+  margin: 0 20px;
+  font-size: 30px;
+}
+
+nav .arrow:active {
+  color: goldenrod;
+}
+
 body {
   margin: 0;
   display: flex;
