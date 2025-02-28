@@ -19,11 +19,35 @@ a {
   text-decoration: inherit;
 }
 
+
+/* Articolo */
+.article-list {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .article-list a {
   color: goldenrod;
   display: block;
   padding: 10px;
   text-decoration: underline;
+}
+
+.article-list img {
+  width: 40%;
+}
+
+.article-list h3 {
+  font-size: 30px;
+}
+
+.article-list p {
+  font-size: 20px;
+}
+
+.article-list span {
+  font-style: italic;
+  font-weight: 700;
 }
 
 /* nav Arrow */
@@ -39,6 +63,35 @@ nav .arrow {
 
 nav .arrow:active {
   color: goldenrod;
+}
+
+/* input */
+
+#input-box {
+  padding: 10px;
+}
+
+form {
+  padding: 10px;
+}
+
+form input {
+  padding: 10px;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
 }
 
 body {
@@ -57,7 +110,8 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 8px;
+  margin: 20px 0;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -68,6 +122,8 @@ button {
 
 button:hover {
   border-color: #646cff;
+  background-color: rgba(0, 0, 0, 0.742);
+
 }
 
 button:focus,
