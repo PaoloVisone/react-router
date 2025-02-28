@@ -7,6 +7,7 @@ import HomePage from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import ListProduct from "./pages/ListProduct";
 import SingleProduct from "./pages/SingleProduct";
+import CreateProduct from "./pages/CreateProduct";
 
 // Layout
 import DefaultLayout from "./layouts/DefaultLayout";
@@ -28,6 +29,7 @@ function App() {
           <Route path="/posts">
             <Route index element={<ListProduct />} />
             <Route path=":id" element={<SingleProduct />} />
+            <Route path="create" element={<CreateProduct />} />
           </Route>
         </Route>
       </Routes>

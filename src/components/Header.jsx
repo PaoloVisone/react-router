@@ -7,6 +7,8 @@ export default function Header(props) {
         { id: 1, text: 'Home', url: '/', current: true },
         { id: 2, text: 'About', url: '/AboutUs', current: false },
         { id: 3, text: 'ListProduct', url: '/posts', current: false },
+        { id: 4, text: 'CreateProduct', url: '/posts/create', current: false },
+
     ];
 
 
